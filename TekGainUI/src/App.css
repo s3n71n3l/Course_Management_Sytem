@@ -1,0 +1,73 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef1f5;
+  color: #2c3e50;
+  padding-top: 70px; /* Make room for the fixed navbar */
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.form-control, .card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+input.form-control, select.form-control {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Keeps the navbar on top */
+  background-color: #343a40; /* Dark background for navbar */
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #f8f9fa;
+  font-weight: 500;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ff7f50;
+}
+
+.navbar-brand h1 {
+  color: coral;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Adjusted content to prevent overlap with fixed navbar */
+.container {
+  margin-top: 70px; /* This will push content down so it's not hidden under the navbar */
+}

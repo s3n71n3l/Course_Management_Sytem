@@ -1,0 +1,95 @@
+/* Body and wrapper */
+.admission_page_wrapper {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admission_content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff; /* Added background for admission content */
+  border-radius: 8px; /* Rounded corners for the content box */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* admission Heading */
+.admission_heading {
+  font-size: 2rem;
+  color: #003366;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Navigation Bar */
+.admission-nav-bar {
+  width: 100%;
+  background-color: #003366;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-nav-links {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Link Styles */
+.admission-nav-links a {
+  color: white;
+  background-color: #0055a5;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Uppercase links for consistency */
+}
+
+.admission-nav-links a:hover {
+  background-color: #0077cc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Effect */
+.admission-nav-links a:active {
+  transform: translateY(1px); /* Slight downward movement on click */
+  box-shadow: none; /* Removing shadow on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admission-nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .admission-nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admission_content_wrapper {
+    padding: 1rem;
+  }
+
+  .admission_heading {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+}
